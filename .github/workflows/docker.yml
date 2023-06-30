@@ -57,12 +57,12 @@ jobs:
           tag: "${{ steps.cots-versions.outputs.EWOC_DAG_VERSION }}"
           fileName: "ewoc_dag-${{ steps.cots-versions.outputs.EWOC_DAG_VERSION }}.tar.gz"
           token: ${{ secrets.CS_ORG_TOKEN }}
-      - name: Download EWoC L8
+      - name: Download EWoC S2C
         uses: robinraju/release-downloader@v1.6
         with:
           repository: "WorldCereal/ewoc_sen2cor"
-          tag: "${{ steps.cots-versions.outputs.EWOC_L8_VERSION }}"
-          fileName: "ewoc_s2c-${{ steps.cots-versions.outputs.EWOC_L8_VERSION }}.tar.gz"
+          tag: "${{ steps.cots-versions.outputs.EWOC_S2_VERSION }}"
+          fileName: "ewoc_s2c-${{ steps.cots-versions.outputs.EWOC_S2_VERSION }}.tar.gz"
           token: ${{ secrets.CS_ORG_TOKEN }}
       - name: Build Docker images
         id: docker-build
