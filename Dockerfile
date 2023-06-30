@@ -42,7 +42,7 @@ RUN python3 -m pip install --no-cache-dir --upgrade pip \
 ## Install sen2cor
 RUN wget --quiet -P /opt http://step.esa.int/thirdparties/sen2cor/2.9.0/Sen2Cor-02.09.00-Linux64.run \
     && chmod +x /opt/Sen2Cor-02.09.00-Linux64.run \
-    && ./opt/Sen2Cor-02.09.00-Linux64.run \
+    && /opt/Sen2Cor-02.09.00-Linux64.run \
     && rm /opt/Sen2Cor-02.09.00-Linux64.run
 # Copy custom L2A_GIPP.xml to sen2cor home
 # This file can be copied to tmp and used as a param
