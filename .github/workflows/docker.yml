@@ -29,7 +29,7 @@ jobs:
         with:
           # list of Docker images to use as base name for tags
           images: |
-            643vlk6z.gra7.container-registry.ovh.net/world-cereal/ewoc_l8_processing
+            643vlk6z.gra7.container-registry.ovh.net/world-cereal/ewoc_s2_processing
           # Do not generate :latest tag on Git push tag
           # See https://github.com/marketplace/actions/docker-metadata-action#latest-tag
           flavor: |
