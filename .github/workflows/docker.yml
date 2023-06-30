@@ -60,7 +60,7 @@ jobs:
       - name: Download EWoC L8
         uses: robinraju/release-downloader@v1.6
         with:
-          repository: "WorldCereal/ewoc_s2c"
+          repository: "WorldCereal/ewoc_sen2cor"
           tag: "${{ steps.cots-versions.outputs.EWOC_L8_VERSION }}"
           fileName: "ewoc_s2c-${{ steps.cots-versions.outputs.EWOC_L8_VERSION }}.tar.gz"
           token: ${{ secrets.CS_ORG_TOKEN }}
