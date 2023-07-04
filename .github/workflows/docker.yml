@@ -80,4 +80,4 @@ jobs:
         uses: addnab/docker-run-action@v3
         with:
           image: 643vlk6z.gra7.container-registry.ovh.net/world-cereal/ewoc_s2_processing:${{ steps.branch-name.outputs.NAME }}
-          run: /opt/entrypoint.sh python --version && /opt/entrypoint.sh pip show ewoc_s2c && /opt/entrypoint.sh pip list && /opt/entrypoint.sh run_s2c --help
+          run: /opt/entrypoint.sh python --version && /opt/entrypoint.sh pip show ewoc_s2c && /opt/entrypoint.sh pip list && /opt/entrypoint.sh s2c --help
